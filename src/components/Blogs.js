@@ -15,10 +15,9 @@ class Blogs extends Component {
 
         return (          
             <div style={styles.blogs} >
-                 <p>Blogs</p>
                  {blogs.map(blog =>
                  <Blog
-                 key={blog.articulo}
+                 key={blog.article}
                  blog={blog}
                  />)}
             </div>
