@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import Blogs from './components/Blogs'
+import Layout from './components/Layout'
 
 
 class App extends Component {
@@ -14,9 +15,11 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Blogs 
-          blogs={this.state.blogs}
-        />
+        <Layout>
+          <Blogs 
+             blogs={this.state.blogs}
+             />
+        </Layout>             
       </div>
     )
   }
