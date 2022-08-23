@@ -1,16 +1,20 @@
 import { Component } from 'react';
 import Blog from './Blog';
 
-//const styles = {
-  //  productos
-//}
+const styles = {
+    blogs: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+    }
+}
 
 class Blogs extends Component {
     render() {
         const { blogs } = this.props
 
         return (          
-            <div>
+            <div style={styles.blogs} >
                  <p>Blogs</p>
                  {blogs.map(blog =>
                  <Blog
