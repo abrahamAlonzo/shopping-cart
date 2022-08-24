@@ -2,9 +2,14 @@ import { Component } from "react";
 
 const styles = {
     title: {
-        color: '#556AEC',
+        padding: '130px 0px 0px',
         textAlign: 'center',
-        fontSize: '34px',  
+        fontSize: '34px',
+        background: '#ccc',
+        background:'radial-gradient(#41B6E6, #556AEC)',
+        fontFamily:'system-ui',
+        WebkitTextFillColor: 'transparent',
+        WebkitBackgroundClip: 'text',
     },
     paragraph: {
         textAlign: 'center',

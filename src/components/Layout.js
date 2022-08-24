@@ -5,7 +5,7 @@ const styles = {
         backgroundColor: 'white',
         width: '1600px',
         height: '700px',
-        padding: '130px 0px',
+
         
     },
     container: {
@@ -19,7 +19,6 @@ class Layout extends Component {
             <div style={styles.layout}>
                 <div style={styles.container}>
                     {this.props.children}
-                    lala
                 </div>
             </div>
         )

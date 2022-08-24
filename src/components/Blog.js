@@ -2,8 +2,7 @@ import { Component } from 'react';
 
 const styles = {
     blog: {
-        padding: '10px 11px',
-        width: '60%',     
+        padding: '10px', 
     },
     img: {
         width: '300px',
@@ -15,7 +14,7 @@ const styles = {
         color: 'darkBlue',
         marginTop: '5px',
         marginBottom: '0px',
-        fontSize: '25px', 
+        fontSize: '21px', 
 
     },
     date:{
@@ -23,7 +22,7 @@ const styles = {
         fontWeight: '600',
         marginBottom: '0px',
         marginTop: '5px',
-        fontSize: '22px',
+        fontSize: '19px',
 
     }
 }

@@ -6,6 +6,9 @@ const styles = {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
+        height: '318px',
+        width:'280px',
+        padding: '0px 170px'
     }
 }
 
