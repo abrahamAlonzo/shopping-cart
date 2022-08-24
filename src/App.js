@@ -15,7 +15,8 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
+      <body>
+      <div style={{backgroundColor: '#eee'}}>
         <Layout>
           <Title />
           <Blogs 
@@ -23,6 +24,7 @@ class App extends Component {
              />
         </Layout>             
       </div>
+      </body>
     )
   }
 }
