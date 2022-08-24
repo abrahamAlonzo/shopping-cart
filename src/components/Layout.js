@@ -2,10 +2,14 @@ import { Component } from "react";
 
 const styles = {
     layout: {
+        backgroundColor: 'white',
+        width: '1600px',
+        height: '700px',
+        padding: '130px 0px',
         
     },
     container: {
-        width: '1200px',
+        
 
     }
 }

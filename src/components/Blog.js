@@ -6,13 +6,16 @@ const styles = {
         width: '60%',     
     },
     img: {
-        width: '100%',
-        marginBottom: '10px',
+        width: '300px',
+	    height: '248px',
+        objectFit: 'cover',
+        objectPosition: '85% 100%',
     },
     article: {
         color: 'darkBlue',
         marginTop: '5px',
         marginBottom: '0px',
+        fontSize: '25px', 
 
     },
     date:{
@@ -20,6 +23,7 @@ const styles = {
         fontWeight: '600',
         marginBottom: '0px',
         marginTop: '5px',
+        fontSize: '22px',
 
     }
 }
