@@ -1,9 +1,7 @@
 import { Component } from 'react';
+import style from './Blog.module.css';
 
 const styles = {
-    blog: {
-        padding: '10px', 
-    },
     img: {
         width: '300px',
 	    height: '248px',
@@ -32,7 +30,7 @@ class Blog extends Component {
     render() {
         const { blog } = this.props
         return (
-            <div style={styles.blog}>
+            <div className={style.blog} style={styles.blog}>
                 <img style={styles.img} alt={blog.article} src={blog.img} />
                 <h3 style={styles.article}>{blog.article}</h3>
                 <p style={styles.date}>{blog.date}</p>
