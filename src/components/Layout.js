@@ -1,23 +1,10 @@
 import { Component } from "react";
-
-const styles = {
-    layout: {
-        backgroundColor: 'white',
-        width: '1600px',
-        height: '700px',
-
-        
-    },
-    container: {
-        
-
-    }
-}
+import styles from './Blog.module.css';
 class Layout extends Component {
     render() {
         return(
-            <div style={styles.layout}>
-                <div style={styles.container}>
+            <div className={styles.layout}>
+                <div className={styles.container}>
                     {this.props.children}
                 </div>
             </div>
