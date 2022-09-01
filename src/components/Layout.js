@@ -4,7 +4,7 @@ class Layout extends Component {
     render() {
         return(
             <div className={styles.layout}>
-                <div className={styles.container}>
+                <div>
                     {this.props.children}
                 </div>
             </div>

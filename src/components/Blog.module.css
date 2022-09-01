@@ -33,31 +33,44 @@
   
 }
 
-.container {
-
-}
-
 .blogs {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 318px;
   width: 280px;
-  padding: 0px 170px;
+  padding: 0px 0px 0px 120px;
+}
+
+.slogan {
+  padding-top: 130px;
+}
+
+.textbox {
+  padding-left: 771px;
+  padding-right: 739px;
+  margin-bottom: 21px;
+  width: 94px;
+  height: 34px;
 }
 
 .title {
-  padding: 130px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+  font-weight: bold;
   text-align: center;
-  font-size: 34px;
-  background: #ccc;
-  background: radial-gradient(#41B6E6, #556AEC);
-  font-family: system-ui;
+  font-size: 40px;
+  background: linear-gradient(to right,#41B6E6 0%, #556AEC 100%);
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; 
 }
 
 .paragraph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   margin: 0px 0px;
   padding: 0px 0px 10px;
