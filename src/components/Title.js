@@ -1,31 +1,16 @@
 import { Component } from "react";
-
-const styles = {
-    title: {
-        padding: '130px 0px 0px',
-        textAlign: 'center',
-        fontSize: '34px',
-        background: '#ccc',
-        background:'radial-gradient(#41B6E6, #556AEC)',
-        fontFamily:'system-ui',
-        WebkitTextFillColor: 'transparent',
-        WebkitBackgroundClip: 'text',
-    },
-    paragraph: {
-        textAlign: 'center',
-        marging: '0px 0px',
-        padding: '0px 0px 10px',
-    }
-}
-
+import styles from './Blog.module.css';
 class Title extends Component {
     render() {
     return (
-        <div>
-            <h1 style={styles.title}>Blog</h1>
-            <p style={styles.paragraph}>Learn more about relevant financial topics for US Hispanics</p>
+        <div className={styles.slogan}>
+            <div className={styles.textbox}>
+            <p className={styles.title}>Blog</p>
+            </div>
+            <p className={styles.paragraph}>
+                Learn more about relevant financial topics for US Hispanics
+            </p>
         </div>
-        
     )
     }
 }

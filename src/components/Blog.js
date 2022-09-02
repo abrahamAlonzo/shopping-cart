@@ -1,41 +1,13 @@
 import { Component } from 'react';
-
-const styles = {
-    blog: {
-        padding: '10px', 
-    },
-    img: {
-        width: '300px',
-	    height: '248px',
-        objectFit: 'cover',
-        objectPosition: '85% 100%',
-    },
-    article: {
-        color: 'darkBlue',
-        marginTop: '5px',
-        marginBottom: '0px',
-        fontSize: '21px', 
-
-    },
-    date:{
-        color:'gray',
-        fontWeight: '600',
-        marginBottom: '0px',
-        marginTop: '5px',
-        fontSize: '19px',
-
-    }
-}
-
-
+import styles from './Blog.module.css';
 class Blog extends Component {
     render() {
         const { blog } = this.props
-        return (
-            <div style={styles.blog}>
-                <img style={styles.img} alt={blog.article} src={blog.img} />
-                <h3 style={styles.article}>{blog.article}</h3>
-                <p style={styles.date}>{blog.date}</p>
+        return (   
+            <div className={styles.blog}>
+                <img className={styles.img} alt={blog.article} src={blog.img} />
+                <h3 className={styles.article}>{blog.article}</h3>
+                <p className={styles.date}>{blog.date}</p>
             </div>
         )
     }
