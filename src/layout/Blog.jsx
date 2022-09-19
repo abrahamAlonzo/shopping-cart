@@ -9,11 +9,12 @@ export default function Blog() {
   const blogImages = require.context('../assets/images', true);
 
   const {  i18n, t } = useTranslation(["localization"]);
-  // useEffect(() => {
-  //   if(localStorage.getItem("i18nextlng")?.length > 2){
-  //     i18next.changeLanguage("en");
-  //   }
-  // }, []);
+  
+  useEffect(() => {
+    if(localStorage.getItem("i18nextlng")?.length > 2){
+      i18next.changeLanguage("en");
+    }
+  }, []);
   
   const handleLanguageChange = (e) => {
     i18n.changeLanguage(e.target.value);
