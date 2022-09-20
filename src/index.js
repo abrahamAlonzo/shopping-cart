@@ -6,9 +6,17 @@ import reportWebVitals from './reportWebVitals';
 
 import { I18nextProvider, initReactI18next } from 'react-i18next';
 import i18next from 'i18next';
-import en from "./localization/en/en.json";
-import es from "./localization/es/es.json";
 import LanguageDetector from 'i18next-browser-languagedetector';
+import en from "./localization/blog/en/en.json";
+import es from "./localization/blog/es/es.json";
+import en2 from "./localization/signup/en/en.json";
+import es2 from "./localization/signup/es/es.json";
+import en3 from "./localization/login/en/en.json";
+import es3 from "./localization/login/es/es.json";
+import en4 from "./localization/header/en/en.json";
+import es4 from "./localization/header/es/es.json";
+
+
 
 i18next
  .use(initReactI18next)
@@ -20,10 +28,16 @@ i18next
   fallbackLng: 'en',
   resources: {
     en: {
-      localization: en,
+      blog: en,
+      signup: en2,
+      login: en3,
+      header: en4,
     },
     es: {
-      localization: es,
+      blog: es,
+      signup: es2,
+      login: es3,
+      header: es4,
     },
   },
 });
